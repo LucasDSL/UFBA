@@ -1,0 +1,5 @@
+// Ler três números que serão os coeficientes a, b, c 
+realizar as operações necessárias para descobrir o delta - b² - 4ac 
+verficar se a partir do delta a função terá 1, 2 ou nenhuma solução real 
+mostrar essas soluções para o usurário 
+

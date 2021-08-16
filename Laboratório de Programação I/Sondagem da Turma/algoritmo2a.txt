@@ -1,0 +1,3 @@
+// Ler o ano de entrada fornecido pelo usuário 
+um ano bissexto é um ano divisível por 4, então precisamos ver se o resto da divisão do número representado pelo ano possui o resto da sua divisão por 4 igual a 0.
+se sim, dizemos que ele é bissexto, se não, ele não é bissexto. 

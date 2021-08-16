@@ -1,0 +1,6 @@
+// Ler as duas matrizes fornecidas pelo usuário 
+Sabemos que o resultado de uma multiplicação de matrizes Amn por Bpq é uma matriz Cmq, quando A e B tem n == p. 
+Assim podemos criar a matriz resultante C de linhas m e colunas q.
+Então fazemos uma interação que percorra m linhas e q colunas para preencher a matriz resultante, porém ainda precisamos multiplicar as matrizes.
+Assim, dentro do laço da interação de preenchimento, fazemos um terceiro laço que percorra até o número m ou p de elementos de linhas da matriz A e colunas da matriz B.
+Dessa forma pra cada interação de preenchimento de determinado indice da matriz resultante, também irá percorrer as matrizes que são multiplicadas, só que somente as linhas da A e colunas da B e o mesmo índice de colunas de A e linhas de B, que será o índice k, igual para as duas, assim aplicando o algoritmo de multiplicação de matrizes e salvando a resposta na matriz C. 

@@ -1,0 +1,2 @@
+// Ler o número fornecido pelo usuário 
+como só consigo pensar para casos em que o número seja inteiro, precisamos percorrer de 1 até a metade inteira daquele número, para assim a cada iteração, ver se aquele número da iteração atual multiplicado por ele mesmo é igual ao número passado, assim descobrindo a possível raíz quadrada do número. 

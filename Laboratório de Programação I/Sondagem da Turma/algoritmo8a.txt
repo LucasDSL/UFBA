@@ -1,0 +1,5 @@
+// ler o número passado pelo usuário 
+montar uma função que retorne um número inteiro 
+assim nessa função temos um caso base que retorna 1, caso o número seja <= a 1.
+e no caso geral podemos multiplicar o número passado na função pela função com parámetro igual ao mesmo número -1.
+Assim ele multiplica os números n, n-1, n-2,..., 1 e finalmente retorna essa multiplicação como resposta.

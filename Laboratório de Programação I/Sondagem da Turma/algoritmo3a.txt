@@ -1,0 +1,2 @@
+// Ler o número que for passado pelo usuário 
+Lendo esse número como string, podemos partir do índice equivalente ao tamanho da string - 1, até o índice 0, dessa forma mostrando o número de trás pra frente, ou seu palíndromo.
