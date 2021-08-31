@@ -18,7 +18,7 @@ unsigned int fib(int k){
 unsigned long int fib2(unsigned long int k){
     unsigned long int atual = 0, ultimo = 1, penultimo = 0;
     int i;
-    for( i = 2; i <= k; i++){
+    for( i = 2; i <= k; i++) {
         atual = penultimo + ultimo;
         penultimo = ultimo;
         ultimo = atual;
