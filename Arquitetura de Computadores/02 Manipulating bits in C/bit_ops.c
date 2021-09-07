@@ -14,7 +14,11 @@ unsigned get_bit(unsigned x,
 void set_bit(unsigned * x,
              unsigned n,
              unsigned v) {
-    // YOUR CODE HERE
+                 // x = 0; x<<31 = 1000000000...>>31 = 11111111111... 111000110001010
+                 // a = (x & b) | (~x & c);
+    unsigned mask = v<<n;
+    *x = (mask & (*x | (1<<n))) | (~mask & (*x & ~(1<<n)));
+    
 }
 // Flip the nth bit of the value of x.
 // Assume 0 <= n <= 31
@@ -49,6 +53,19 @@ void test_flip_bit(unsigned x,
     }
 }
 
+void test_set_bit(unsigned x,
+        unsigned n,
+        unsigned v,
+        unsigned expected) {
+    unsigned o = x;
+    set_bit(&x, n, v);
+    if(x!=expected) {
+        printf("set_bit(0x%08x,%u,%u): 0x%08x, expected 0x%08x\n",o,n,v,x,expected);
+    } else {
+        printf("set_bit(0x%08x,%u,%u): 0x%08x, correct\n",o,n,v,x);
+    }
+}
+
 int main(){
     printf("\nTesting get_bit()\n\n");
     test_get_bit(0b1001110,0,0);
@@ -64,4 +81,14 @@ int main(){
     test_flip_bit(0b1001110,2,0b1001010);
     test_flip_bit(0b1001110,5,0b1101110);
     test_flip_bit(0b1001110,9,0b1001001110);
+
+    printf("\nTesting set_bit()\n\n");
+    test_set_bit(0b1001110,2,0,0b1001010);
+    test_set_bit(0b1101101,0,0,0b1101100);
+    test_set_bit(0b1001110,2,1,0b1001110);
+    test_set_bit(0b1101101,0,1,0b1101101);
+    test_set_bit(0b1001110,9,0,0b1001110);
+    test_set_bit(0b1101101,4,0,0b1101101);
+    test_set_bit(0b1001110,9,1,0b1001001110);
+    test_set_bit(0b1101101,7,1,0b11101101);
 }
