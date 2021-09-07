@@ -6,8 +6,8 @@
 unsigned get_bit(unsigned x,
                  unsigned n) {
     
-    unsigned new_x = x>>n;
-    return (new_x & 0b1);
+    x = x>>n;
+    return (x & 0b1);
 }
 // Set the nth bit of the value of x to v.
 // Assume 0 <= n <= 31, and v is 0 or 1
@@ -25,6 +25,7 @@ void flip_bit(unsigned * x,
     
 }
 
+// Lines below came with the projects proposal.
 void test_get_bit(unsigned x,
         unsigned n,
         unsigned expected) {
