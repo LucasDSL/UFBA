@@ -14,8 +14,6 @@ unsigned get_bit(unsigned x,
 void set_bit(unsigned * x,
              unsigned n,
              unsigned v) {
-                 // x = 0; x<<31 = 1000000000...>>31 = 11111111111... 111000110001010
-                 // a = (x & b) | (~x & c);
     unsigned mask = v<<n;
     *x = (mask & (*x | (1<<n))) | (~mask & (*x & ~(1<<n)));
     
