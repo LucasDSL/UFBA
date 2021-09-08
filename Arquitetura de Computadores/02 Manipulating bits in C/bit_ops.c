@@ -14,6 +14,9 @@ unsigned get_bit(unsigned x,
 void set_bit(unsigned * x,
              unsigned n,
              unsigned v) {
+    /* The left part of the main or(|) forces the nth value of *x to be equal to v and the 
+    right part of the main or(|) get the other bits from the number, since it makes every bit equals to 1 on the mask, except the nth bit, wich can be equal to 1 and flips to 0, wich also denies it from being changed from the value of the left part of the main or(|), giving back the correct answer.
+    */
     unsigned mask = v<<n;
     *x = (mask & (*x | (1<<n))) | (~mask & (*x & ~(1<<n)));
     
@@ -25,68 +28,4 @@ void flip_bit(unsigned * x,
     unsigned mask = 0x1<<n; 
     *x = *x ^ mask;
     
-}
-
-// Lines below came with the projects proposal.
-void test_get_bit(unsigned x,
-        unsigned n,
-        unsigned expected) {
-    unsigned a = get_bit(x, n);
-    if(a!=expected) {
-        printf("get_bit(0x%08x,%u): 0x%08x, expected 0x%08x\n",x,n,a,expected);
-    } else {
-        printf("get_bit(0x%08x,%u): 0x%08x, correct\n",x,n,a);
-    }
-}
-
-void test_flip_bit(unsigned x,
-        unsigned n,
-        unsigned expected) {
-    unsigned o = x;
-    flip_bit(&x, n);
-    if(x!=expected) {
-        printf("flip_bit(0x%08x,%u): 0x%08x, expected 0x%08x\n",o,n,x,expected);
-    } else {
-        printf("flip_bit(0x%08x,%u): 0x%08x, correct\n",o,n,x);
-    }
-}
-
-void test_set_bit(unsigned x,
-        unsigned n,
-        unsigned v,
-        unsigned expected) {
-    unsigned o = x;
-    set_bit(&x, n, v);
-    if(x!=expected) {
-        printf("set_bit(0x%08x,%u,%u): 0x%08x, expected 0x%08x\n",o,n,v,x,expected);
-    } else {
-        printf("set_bit(0x%08x,%u,%u): 0x%08x, correct\n",o,n,v,x);
-    }
-}
-
-int main(){
-    printf("\nTesting get_bit()\n\n");
-    test_get_bit(0b1001110,0,0);
-    test_get_bit(0b1001110,1,1);
-    test_get_bit(0b1001110,5,0);
-    test_get_bit(0b11011,3,1);
-    test_get_bit(0b11011,2,0);
-    test_get_bit(0b11011,9,0);
-
-    printf("\nTesting flip_bit()\n\n");
-    test_flip_bit(0b1001110,0,0b1001111);
-    test_flip_bit(0b1001110,1,0b1001100);
-    test_flip_bit(0b1001110,2,0b1001010);
-    test_flip_bit(0b1001110,5,0b1101110);
-    test_flip_bit(0b1001110,9,0b1001001110);
-
-    printf("\nTesting set_bit()\n\n");
-    test_set_bit(0b1001110,2,0,0b1001010);
-    test_set_bit(0b1101101,0,0,0b1101100);
-    test_set_bit(0b1001110,2,1,0b1001110);
-    test_set_bit(0b1101101,0,1,0b1101101);
-    test_set_bit(0b1001110,9,0,0b1001110);
-    test_set_bit(0b1101101,4,0,0b1101101);
-    test_set_bit(0b1001110,9,1,0b1001001110);
-    test_set_bit(0b1101101,7,1,0b11101101);
 }
