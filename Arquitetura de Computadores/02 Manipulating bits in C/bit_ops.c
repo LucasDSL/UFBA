@@ -14,11 +14,11 @@ unsigned get_bit(unsigned x,
 void set_bit(unsigned * x,
              unsigned n,
              unsigned v) {
-    /* The left part of the main or(|) forces the nth value of *x to be equal to v and the 
-    right part of the main or(|) get the other bits from the number, since it makes every bit equals to 1 on the mask, except the nth bit, wich can be equal to 1 and flips to 0, wich also denies it from being changed from the value of the left part of the main or(|), giving back the correct answer.
+    /* The left part of the main or(|) forces the nth value of *x to be equal to v and the right part of the main or(|) get the other bits from the number. On the right part of the main or(|), first we deny the 1<<n getting that way something like ..11101111..., whereas 0 is in the nth position. Afterwards we use & to get every bit on *x, except the nth bit - we already have it on the left part of the main or(|), that way when we get together the two parts with
+    the main or(|), it gives back the correct wanted number.
     */
     unsigned mask = v<<n;
-    *x = (mask & (*x | (1<<n))) | (~mask & (*x & ~(1<<n)));
+    *x = (mask & (*x | (1<<n))) | (*x & ~(1<<n));
     
 }
 // Flip the nth bit of the value of x.

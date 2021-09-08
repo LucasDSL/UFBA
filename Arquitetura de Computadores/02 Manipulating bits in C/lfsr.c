@@ -21,5 +21,5 @@ void lfsr_calculate(uint16_t *reg) {
   
   // Setting the leftmost bit to the value of the third_xor output
   unsigned mask = third_xor<<15;
-  *reg = (mask & (*reg | (1<<15))) | (~mask & (*reg & ~(1<<15)));
+  *reg = (mask & (*reg | (1<<15))) | (*reg & ~(1<<15));
 }
