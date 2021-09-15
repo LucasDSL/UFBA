@@ -5,3 +5,5 @@
 int soma(int * vetor, int i, int tam)</h1>
 <h1><a href="#">Exercício 16</a>. [adaptado de Paes (2016)]. Faça uma função recursiva que encontre um determinado número em um vetor e retorne o índice de onde ele foi encontrado. A função deve ter a seguinte assinatura: <br>
 int procurar(int * vetor, int tam, int indice, int num)</h1>
+<h1><a href="#">Exercício 17</a>.  [adaptado de Paes (2016)]. Faça uma função recursiva que receba um vetor como parâmetro e retorne o seu maior elemento. A função deve ter a seguinte assinatura:<br>
+int maior(int * vetor, int tam, int indice)</h1>
