@@ -1,4 +1,4 @@
- #include<stdio.h>
+#include<stdio.h>
 #include<stdlib.h>
 //Exercício 01 (Pereira, 2010). Codifique um procedimento em C que receba como parâmetro um número natural n como entrada e exiba na tela uma contagem regressiva de n até 0.
 void mostra_n_ate_0(int n){
