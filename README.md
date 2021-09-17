@@ -2,6 +2,7 @@
 <p>Material produzido por mim ou em conjunto com outras pessoas(haverá indicativo) durante as matérias de computação na graduação.<br>
 Obs: Cada pasta refere-se a alguma materia e possui um número que antecede o título da matéria e refere-se ao semestre
 em que foi feita.<br><br>
+PS: As listas de exercício e questões aqui presentes não são minha propriedade e sim dos professores e professoras da matéria em questão e da Universidade Federal da Bahia.<br>
 <h2>Semestre 01 - 2021.1</h2>
 <h3>Introdução a Lógica de Programação</h3>
 <p>Aprendemos o básico de Lógica de programação e podíamos optar por usar C ou C++ para resolvermos os exercícios. Na época escolhi C++ como fica claro pela extensão .cpp das minhas respostas. Eu não podia estar mais arrependido dessa escolha.</p>
