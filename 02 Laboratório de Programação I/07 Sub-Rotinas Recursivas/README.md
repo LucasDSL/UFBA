@@ -19,5 +19,5 @@ int maior(int * vetor, int tam, int indice)</p>
 <h2><a href="https://github.com/LucasDSL/Faculdade/blob/67aa07aa8e987120754d7dea32e1f5a049c73ced/02%20Laborat%C3%B3rio%20de%20Programa%C3%A7%C3%A3o%20I/07%20Sub-Rotinas%20Recursivas/e19.c">Exercício 19</a>:</h2>  
 <p>[adaptado de Paes (2016)]. Escreva uma função recursiva que receba uma string e o tamanho dessa string como parâmetro e retorne a mesma string com os caracteres na ordem contrária. Nesse caso, o retorno deve ser realizado alternado a própria string recebida com parâmetro:<br>
 void inverter(char * s, int len)</p>
-<h2><a href="https://github.com/LucasDSL/Faculdade/blob/67aa07aa8e987120754d7dea32e1f5a049c73ced/02%20Laborat%C3%B3rio%20de%20Programa%C3%A7%C3%A3o%20I/07%20Sub-Rotinas%20Recursivas/e20.c">Exercício 20</a>.</h2>
+<h2><a href="https://github.com/LucasDSL/Faculdade/blob/67aa07aa8e987120754d7dea32e1f5a049c73ced/02%20Laborat%C3%B3rio%20de%20Programa%C3%A7%C3%A3o%20I/07%20Sub-Rotinas%20Recursivas/e20.c">Exercício 20</a>:</h2>
 <p>Escreva uma função recursiva que dois número inteiros como parâmetro e retorne o máximo divisor comun entre eles (MDC).</p>
