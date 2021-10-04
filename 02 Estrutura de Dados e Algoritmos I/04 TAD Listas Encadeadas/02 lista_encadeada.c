@@ -18,10 +18,11 @@ void adicionar_fim(elemento *, lista *);
 void imprimir(lista *);
 void remover_inicio(lista *);
 void insercao_posicao(elemento *, lista *, int);
-
+void insercao_ordenada(lista *, elemento *);
 // Fazendo testes  com as implementações
 int main(){
     lista *l = criar_lista();
+    printf("\nTestando impressao de lista e adicionando no fim e inicio:\n");
     adicionar_fim(criar_elemento(14), l);
     adicionar_inicio(criar_elemento(12), l);
     adicionar_fim(criar_elemento(15), l);
@@ -30,10 +31,36 @@ int main(){
     adicionar_fim(criar_elemento(17), l);
     imprimir(l);
     remover_inicio(l);
-    printf("Lista sem o primeiro elemento:\n");
+    printf("\nTestao insercao em determinada posicao:\n");
     insercao_posicao(criar_elemento(1), l, 2);
     insercao_posicao(criar_elemento(1), l, 0);
     imprimir(l);
+    printf("\nTestando lista ordenada e insercao ordenada:\n");
+    lista *list = criar_lista();
+    printf("Lista num primeiro momento:\n");
+    adicionar_fim(criar_elemento(2), list);
+    adicionar_fim(criar_elemento(3), list);
+    adicionar_fim(criar_elemento(4), list);
+    adicionar_fim(criar_elemento(6), list);
+    adicionar_fim(criar_elemento(9), list);
+    adicionar_fim(criar_elemento(13), list);
+    adicionar_fim(criar_elemento(17), list);
+    adicionar_fim(criar_elemento(19), list);
+    imprimir(list);
+    printf("\nInserindo o numero 20:\n");
+    insercao_ordenada(list, criar_elemento(20));
+    imprimir(list);
+    printf("\nInserindo o numero 13:\n");
+    insercao_ordenada(list, criar_elemento(13));
+    imprimir(list);
+    printf("\nInserindo o numero 1:\n");
+    insercao_ordenada(list, criar_elemento(1));
+    imprimir(list);
+    printf("\nInserindo o numero 5:\n");
+    insercao_ordenada(list, criar_elemento(5));
+    imprimir(list);
+    free(l);
+    free(list);
     return EXIT_SUCCESS;
 }
 
@@ -74,10 +101,7 @@ void adicionar_fim(elemento *e, lista *l){
     }
     //Caso não esteja vazia, procuramos o último elemento.
     elemento *temp = l->head;
-    while(1){
-        if(temp->prox == NULL){
-            break;
-        }
+    while(temp->prox != NULL){
         temp = temp->prox;
     }
     temp->prox = e;
@@ -105,22 +129,56 @@ void insercao_posicao(elemento *e, lista *l, int pos){
     // Aponta para o número atual pelo qual percorremos a lista
     elemento *temp = l->head;
     // Aponta para o número após o atual
-    elemento *temp2 = temp->prox;
-    while(1){
+    while(posAtual!=pos){
         if(posAtual == pos-1){
             // O seguinte após o inserido é o que vem após o atual(após a posição desejada)
-            e->prox = temp2;
+            e->prox = temp->prox;
             // O anterior à posição desejada(pos-1) terá como próximo o número inserido
             temp->prox = e;
             break;
         }
         posAtual += 1;
         temp = temp->prox;
-        temp2 = temp->prox;
     }
 }
+void insercao_ordenada(lista *l, elemento *e){
+    // Caso a lista esteja vazia 
+    if(l->head == NULL){
+        l->head = e;
+        return;
+    }
+    elemento *temp = l->head;
+    // Caso o primeiro e único elemento seja menor que o que desejamos inserir 
+    if(temp->prox == NULL && temp->quantidade >= e->quantidade){
+        e->prox = temp;
+        l->head = e;
+        return;
+    } 
+    // Caso o primeiro elemento seja maior que o que desejamos inserir
+    if(temp->quantidade >= e->quantidade){
+        e->prox = temp;
+        l->head = e;
+        return;
+    }
+    // Verifica se o número deve ser inserido no meio da lista
+    // Caso o atual seja "< e" e o seguinte seja "> e"
+    elemento *temp2 = temp->prox;
+    while (temp2 != NULL){
+        if(temp->quantidade <= e->quantidade 
+        && temp2->quantidade >= e->quantidade){
+            e->prox = temp2;
+            temp->prox = e;
+            return;
+        }
+        temp = temp->prox;
+        temp2 = temp2->prox;
+    }
+    // Caso não seja nenhum dos casos e saia do loop, ou seja
+    // temp2 == NULL, significa que chegamos ao fim da lista
+    // dessa forma devemos inserir o número no fim
+    temp->prox = e;
+}
 // Fazer implementação de Remoção de posição
-// Inserção ordenada
 // Buscar posição
 // Verificar implementação de Lista duplamente encadeada: 
 // uma lista com elementos contento *prox e *anter(anterior)
