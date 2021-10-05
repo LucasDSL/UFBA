@@ -19,6 +19,8 @@ void imprimir(lista *);
 void remover_inicio(lista *);
 void insercao_posicao(elemento *, lista *, int);
 void insercao_ordenada(lista *, elemento *);
+int busca_posicao(lista *, elemento *);
+void remove_posicao(lista *, int);
 // Fazendo testes  com as implementações
 int main(){
     lista *l = criar_lista();
@@ -59,6 +61,22 @@ int main(){
     printf("\nInserindo o numero 5:\n");
     insercao_ordenada(list, criar_elemento(5));
     imprimir(list);
+    printf("Testando busca por posicao na primeira lista:\n");
+    printf("Numero 15 encontrado na posicao %d\n", busca_posicao(l, criar_elemento(15)));
+    printf("Numero 14 encontrado na posicao %d\n", busca_posicao(l, criar_elemento(14)));
+    printf("Numero 17 encontrado na posicao %d\n", busca_posicao(l, criar_elemento(17)));
+    printf("\nTestando remocao de elementos em posicoes determinadas:\n");
+    printf("Lista: \n");
+    imprimir(list);
+    printf("Removendo o primeiro elemento da lista anterior:\n");
+    remove_posicao(list, 0);
+    imprimir(list);
+    printf("Removendo o terceiro elemento da lista anterior:\n");
+    remove_posicao(list, 2);
+    imprimir(list);
+    printf("Removendo o ultimo elemento da lista anterior:\n");
+    remove_posicao(list, 9);
+    imprimir(list);
     free(l);
     free(list);
     return EXIT_SUCCESS;
@@ -92,7 +110,6 @@ void imprimir(lista *l){
     printf("\n-----fim da Lista-----\n");
 }
 
-// Implementação minha...
 void adicionar_fim(elemento *e, lista *l){
     // Caso a lista esteja vazia, já adiciona o primeiro elemento
     if(l->head == NULL){
@@ -178,7 +195,50 @@ void insercao_ordenada(lista *l, elemento *e){
     // dessa forma devemos inserir o número no fim
     temp->prox = e;
 }
-// Fazer implementação de Remoção de posição
-// Buscar posição
-// Verificar implementação de Lista duplamente encadeada: 
-// uma lista com elementos contento *prox e *anter(anterior)
+
+int busca_posicao(lista *l, elemento *e){
+    elemento *temp = l->head;
+    if(temp == NULL){
+        return -1;
+    }
+    if(temp->quantidade == e->quantidade){
+        return 0;
+    }
+    if(temp->prox == NULL){
+        return -1;
+    }
+    temp = temp->prox;
+    int count = 1;
+    while(temp != NULL){
+        if(temp->quantidade == e->quantidade){
+            return count;
+        }
+        temp = temp->prox;
+        count += 1;
+    }
+    return -1;
+}
+
+void remove_posicao(lista *l, int pos){
+    if(pos < 0){
+        return;
+    }
+    elemento *temp = l->head;
+    if(pos == 0){
+        l->head = temp->prox;
+        return;
+    }
+    int posAtual = 0;
+    elemento *temp2 = temp->prox;
+    while(posAtual != pos){
+        if(posAtual == pos-1){
+            temp->prox = temp2->prox;
+            return;
+        }
+        posAtual += 1;
+        temp = temp->prox;
+        temp2 = temp2->prox;
+    }
+    printf("Nao foi possivel fazer a insercao na posicao desejada!\n");
+
+}
