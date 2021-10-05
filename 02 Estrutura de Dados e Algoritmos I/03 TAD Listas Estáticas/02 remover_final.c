@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-// Esvaziar um elemento numa lista é apontar uma posição que possua algo como uma posição livre para preenchimento
+// Esvaziar um elemento numa lista é apontar uma posição que possua algo, como uma posição livre para preenchimento
 void remover_final(int *ultimo_valor){
     *ultimo_valor -= 1;
 }
