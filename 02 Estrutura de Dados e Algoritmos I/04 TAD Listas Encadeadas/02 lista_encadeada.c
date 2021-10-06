@@ -166,7 +166,7 @@ void insercao_ordenada(lista *l, elemento *e){
     }
     elemento *temp = l->head;
     // Caso o primeiro e único elemento seja menor que o que desejamos inserir 
-    if(temp->prox == NULL && temp->quantidade >= e->quantidade){
+    if(temp->prox == NULL && temp->quantidade <= e->quantidade){
         e->prox = temp;
         l->head = e;
         return;
