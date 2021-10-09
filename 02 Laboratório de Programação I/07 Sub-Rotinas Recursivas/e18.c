@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+// Not working for floats smaller than 1.
 float multiplica(float num1, float num2){
     if(num2 == 1.0){
         return num1;
