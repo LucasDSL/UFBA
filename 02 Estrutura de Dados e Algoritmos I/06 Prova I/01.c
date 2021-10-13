@@ -66,12 +66,11 @@ void adicionar_inicio(elemento *e, lista *l){
 
 void imprimir(lista *l){
     elemento *temp = l->head;
-    printf("-----imprimindo Lista-----\n");
     while(temp != NULL){
         printf("%.2f ", temp->quantidade);
         temp = temp->prox;
     }
-    printf("\n-----fim da Lista-----\n");
+    printf("\n");
 }
 
 void adicionar_fim(elemento *e, lista *l){

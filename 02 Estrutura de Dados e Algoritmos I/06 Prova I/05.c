@@ -75,7 +75,7 @@ void imprimir(pilha *p){
     item *temp = p->head;
     int count = 0;
     while(temp != NULL){
-        printf("[%d] = %d\n", count, temp->num);
+        printf("%d\n", temp->num);
         temp = temp->next;
         count += 1;
     }
