@@ -112,7 +112,7 @@ loop:
     	# increases the addres of pointer of list 
     	addi $a0 $a0 4
 
-    	# load the addres of list equal to value of i
+    	# load the value on addres of list equal to value of i
     	lw $t5 0($a0)
 
     	# first if inside the loop 
