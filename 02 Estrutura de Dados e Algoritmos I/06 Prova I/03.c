@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-typedef struct {
+typedef struct elemento{
     int num;
     struct elemento *next;
     struct elemento *last;
 } elemento;
 
-typedef struct {
+typedef struct lista{
     struct elemento *head;
     struct elemento *tail;
 } lista;
@@ -20,7 +20,9 @@ void imprimir(lista *);
 
 int 
 main(){
+    int linhas;
     lista *l1 = criar_lista();
+    scanf("%d", &linhas);
     // Criação da lista de jogadores
     adicionar_fim(l1, criar_elemento(0));
     adicionar_fim(l1, criar_elemento(1));
@@ -35,13 +37,9 @@ main(){
         soma += ler_soma;
         count++;
     }
-    char perdedor[8];
     int inicio;
-    scanf("%s %d", &perdedor, &inicio);
-    // Retirando da soma total a quantidade equivalente ao começo 
-    // da contagem, para que possa iniciar a contagem da começo
-    // mas termina no equivalente, caso houvesse um ínicio definido 
-    soma -= inicio;
+    scanf("%d", &inicio); 
+    soma += inicio;
     elemento *temp = l1->head;
     while (soma > 1)
     {

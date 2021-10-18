@@ -1,11 +1,11 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-typedef struct{
+typedef struct item{
     int num;
     struct item *next;
 } item;
-typedef struct {
+typedef struct pilha{
     struct item *head; // Em pilhas a head é o elemento do topo
     // ou último a ser inserido
 } pilha;
@@ -19,18 +19,22 @@ void topo_base(pilha *);
 
 int main(){
     pilha *pil = criar_pilha();
+    int linhas;
+    scanf("%d", &linhas);
+    int num_atual;
+    while(scanf("%d", &num_atual) == 1){
+        empilhar(pil, criar_item(num_atual));
+    };
     pilha *aux = criar_pilha();
-    empilhar(pil, criar_item(1));
-    empilhar(pil, criar_item(2));
-    empilhar(pil, criar_item(3));
-    empilhar(pil, criar_item(4));
-    empilhar(pil, criar_item(5));
-    empilhar(pil, criar_item(6));
-    empilhar(pil, criar_item(7));
-    imprimir(pil);
-    printf("\n");
-    topo_base(pil);
-    imprimir(pil);
+    item *temp = pil->head;
+    while (temp != NULL)
+    {
+        // Invertendo a pilha recebida
+        temp = temp->next;
+        empilhar(aux, desempilhar(pil));
+    }
+    topo_base(aux);
+    imprimir(aux);
 }
 
 item *criar_item(int num){
@@ -55,7 +59,6 @@ void empilhar(pilha *p, item *e){
 }   
 
 item *desempilhar(pilha *p){
-    vazia(p);
     item *temp = p->head;
     item *copy_temp = (item *) malloc(sizeof(item));
     copy_temp->num = temp->num;
@@ -64,21 +67,16 @@ item *desempilhar(pilha *p){
     free(temp);
     return copy_temp;
 }
-void vazia(pilha *p){
-    if(p->head == NULL){
-        printf("A pilha esta vazia!\n");
-        return;
-    }
-}
+
 void imprimir(pilha *p){
-    vazia(p);
     item *temp = p->head;
     int count = 0;
     while(temp != NULL){
-        printf("%d\n", temp->num);
+        printf("%d ", temp->num);
         temp = temp->next;
         count += 1;
     }
+    printf("\n");
 }
 
 void topo_base(pilha *p){

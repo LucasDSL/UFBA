@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
-
-typedef struct {
+#include<string.h>
+typedef struct elemento{
     float num;
     struct elemento *next;
     struct elemento *last;
 } elemento;
 
-typedef struct {
+typedef struct lista{
     struct elemento *head;
     struct elemento *tail;
 } lista;
@@ -19,30 +19,46 @@ void adicionar_inicio(lista *, elemento *);
 void imprimir(lista *);
 void insercao_ordenada_inicio(lista *, elemento *);
 void insercao_ordenada_fim(lista *, elemento *);
+void getElements(char *line, float *elementos, int *tamanho){
+	int i = 0;
+	
+	char* token = strtok(line, " ");
+	while (token) {
+		i += 1;
+		elementos = (float *) realloc (elementos, sizeof(int)*i);
+		elementos[i-1] = atof(token);
+		token = strtok(NULL, " ");
+    }
 
+	*tamanho = i;
+
+}
 int 
 main(){
     lista *l1 = criar_lista();
     lista *l2 = criar_lista();
-    float num; 
-    char nextCHAR;
-    // Lendo a primeira lista
-    while (scanf("%f%c", &num, &nextCHAR))
-    {
-        adicionar_fim(l1, criar_elemento(num));
-        if(nextCHAR == '\n'){
-            break;
-        }
+    char *line = NULL;
+	size_t len = 0;
+	getline(&line, &len, stdin);
+	int total_linhas = atoi(line);
+    int i, j;
+	for(j = 0; j < total_linhas; j++){
+		getline(&line, &len, stdin);
+		float *elementos = (float *) malloc (0*sizeof(float));
+		int *tamanho = (int *) malloc (1*sizeof(int));
+		getElements(line, elementos, tamanho);
+		for(i = 0; i < *tamanho; i++){
+            if(j == 0){
+                adicionar_fim(l1, criar_elemento(elementos[i]));
+            }
+            if(j == 1){
+                adicionar_fim(l2, criar_elemento(elementos[i]));
+            }
+		}
+		free(elementos);
+		free(tamanho);
     }
-    // Lendo a segunda lista
-    while (scanf("%f%c", &num, &nextCHAR))
-    {
-        adicionar_fim(l2, criar_elemento(num));
-        if(nextCHAR == '\n'){
-            break;
-        }
-    }
-
+    free(line);
     elemento *temp = l2->head;
     // Adicionando o primeiro elemento da lista 2 com inserção ordenada
     // começando da cabeça
@@ -171,7 +187,7 @@ void insercao_ordenada_fim(lista *l, elemento *e){
 void imprimir(lista *l){
     elemento *temp = l->head;
     while(temp != NULL){
-        printf("%.2f ", temp->num);
+        printf("%g ", temp->num);
         temp = temp->next;
     }
     printf("\n");

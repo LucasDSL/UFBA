@@ -1,12 +1,13 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 // Lista ligada ou encadeada : dinâmica
-typedef struct{
+typedef struct elemento{
     float quantidade;
     struct elemento *prox;
 } elemento;
 
-typedef struct{
+typedef struct lista{
     struct elemento *head;
 } lista;
 
@@ -22,28 +23,51 @@ void insercao_ordenada(lista *, elemento *);
 int busca_posicao(lista *, elemento *);
 void remove_posicao(lista *, int);
 void conc(lista *, lista *);
+void
+getElements(char *line, float *elementos, int *tamanho){
+	int i = 0;
+	
+	char* token = strtok(line, " ");
+	while (token) {
+		i += 1;
+		elementos = (float *) realloc (elementos, sizeof(int)*i);
+		elementos[i-1] = atof(token);
+		token = strtok(NULL, " ");
+        }
+
+	*tamanho = i;
+
+}
 // Fazendo testes  com as implementações
 int main(){
     lista *l1 = criar_lista();
     lista *l2 = criar_lista();
-    float var;
-    char proxChar;
-    while(scanf("%f%c", &var, &proxChar)){
-        adicionar_fim(criar_elemento(var), l1);
-        if(proxChar == '\n'){
-            break;
-        }
-    }
-    while(scanf("%f%c", &var, &proxChar)){
-        adicionar_fim(criar_elemento(var), l2);
-        if(proxChar == '\n'){
-            break;
-        }
-    }
-    imprimir(l1);
-    imprimir(l2);
+	char *line = NULL;
+	size_t len = 0;
+	getline(&line, &len, stdin);
+
+	int total_linhas = atoi(line);
+    int i, j;
+	for(j = 0; j < total_linhas; j++){
+		getline(&line, &len, stdin);
+		float *elementos = (float *) malloc (0*sizeof(float));
+		int *tamanho = (int *) malloc (1*sizeof(int));
+		getElements(line, elementos, tamanho);
+		for(i = 0; i < *tamanho; i++){
+            if(j == 0){
+                adicionar_fim(criar_elemento(elementos[i]), l1);
+            }
+            if(j == 1){
+                adicionar_fim(criar_elemento(elementos[i]), l2);
+            }
+		}
+		free(elementos);
+		free(tamanho);
+	}
+	free(line);
     conc(l1, l2);
     imprimir(l1);
+	return EXIT_SUCCESS;
 }
 
 lista *criar_lista(){
@@ -67,7 +91,7 @@ void adicionar_inicio(elemento *e, lista *l){
 void imprimir(lista *l){
     elemento *temp = l->head;
     while(temp != NULL){
-        printf("%.2f ", temp->quantidade);
+        printf("%g ", temp->quantidade);
         temp = temp->prox;
     }
     printf("\n");
@@ -120,7 +144,6 @@ elemento *copy(elemento *e){
 }
 void conc(lista *l1, lista *l2){
     int cont = 0;
-    elemento *temp1 = l1->head;
     elemento *temp2 = l2->head;
     while(temp2 != NULL){
         elemento *copy_temp2 = copy(temp2);
