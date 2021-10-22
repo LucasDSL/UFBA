@@ -20,3 +20,56 @@ Faça um programa para armazenar em memória um vetor de dados contendo 1500 val
 (a) Faça um loop e verifique se o vetor contém realmente os 1500 valores inicializados com zero (conte os 1500 zeros do vetor).<br>
 (b) Atribua para cada elemento do vetor o valor do seu índice junto a este vetor.<br>
 (c) Exibir na tela os 10 primeiros e os 10 últimos elementos do vetor.<br>
+## [Exercício 9]()  
+Faça um programa que leia uma quantidade qualquer de números armazenando-os na memoria e pare a leitura quando o usuário entrar um número negativo. Em seguida, imprima o vetor lido. Use a função REALLOC.
+## [Exercício 10]()  
+Faça um programa que pergunte ao usuário quantos valores ele deseja armazenar em um vetor de double, depois use a função MALLOC para reservar (alocar) o espaço de memória de acordo com o especificado pelo usuário. Esse vetor deve ter um tamanho maior ou igual a 10 elementos. Use este vetor dinâmico como um vetor comum, atribuindo aos 10 primeiros elementos do vetor valores aleatórios entre 0 e 100 (usando a função rand). Exiba na tela os valores armazenados nos 10 primeiros elementos do vetor.
+## [Exercício 11]()  
+Crie um programa que declare uma estrutura (registro) para o cadastro de alunos.<br>
+(a) Deverão ser armazenados, para cada aluno: matrícula, sobrenome (apenas um) e ano de nascimento.<br>
+(b) Ao iniciar o programa, o usuario deverá informar o número de alunos que serão armazenados.<br>
+(c) O programa deverá alocar dinamicamente a quantidade necessária de memória para armazenar os registros dos alunos.<br>(d) O programa deverá pedir ao usuário que entre com as informações dos alunos.<br>
+(e) Ao final, mostrar os dados armazenados e liberar a memoria alocada.
+## [Exercício 12]()  
+ Considere um cadastro de produtos de um estoque, com as seguintes informações para cada produto: Código de identificação do produto - representado por um valor inteiro; Nome do produto - com até 50 caracteres; Quantidade disponível no estoque - representado por um número inteiro; Preço de venda - representado por um valor real.<br>(a) Defina uma estrutura, denominada produto, que tenha os campos apropriados para guardar as informações de um produto<br>
+(b) Crie um conjunto de N produtos (N é um valor fornecido pelo usuário) e peça ao usuário para entrar com as informações de cada produto<br>
+(c) Encontre o produto com o maior preço de venda<br>
+(d) Encontre o produto com a maior quantidade disponível no estoque.<br>
+## [Exercício 13]()  
+Escreva um programa que aloque dinamicamente uma matriz (de inteiros) de dimensões definidas pelo usuário e a leia. Em seguida, implemente uma função que receba um valor e: retorne 1, caso o valor esteja na matriz; ou retorne 0, caso não esteja na matriz.
+## [Exercício 14]()
+Construa um programa que leia o número de linhas e de colunas de uma matriz de números reais, aloque espaço dinamicamente para esta e a inicialize com valores fornecidos pelo usuário. Ao final, o programa deverá retornar a matriz na saída padrão com layout apropriado.
+## [Exercício 15]()
+Faça um programa que leia dois números N e M e: crie e leia uma matriz de inteiros N x M; localize os três maiores números de uma matriz; e mostre a linha e a coluna onde estão.
+## [Exercício 16]()
+Faça um programa que leia dois números N e M: crie e leia uma matriz N x M de inteiros; crie e construa uma matriz transposta M x N de inteiros; e mostre as duas matrizes.
+## [Exercício 17]()
+Faça um programa que leia números do teclado e os armazene em um vetor alocado dinamicamente.O usuário irá digitar uma sequência de números, sem limite de quantidade. Os números serão digitados um a um e, caso deseje encerrar a entrada de dados, ele irá digitar o número ZERO. Os dados devem ser armazenados na memória da seguinte forma:<br>
+Inicie com um vetor de tamanho 10 alocado dinamicamente;<br>
+Quando o vetor alocado estiver cheio, aloque um novo vetor do tamanho do vetor anterior adicionado espaço para mais 10 valores (tamanho N+10, onde N inicia com 10);<br>
+Copie os valores já digitados da área inicial para está área maior e libere a memória da área inicial;
+Repita este procedimento de expandir dinamicamente com mais 10 valores o vetor alocado cada vez que o mesmo estiver cheio. Assim o vetor irá ser "expandido" de 10 em 10 valores.<br>
+Ao final, exiba o vetor lido. Não use a função REALLOC.<br>
+## [Exercício 18]()
+ Escreva um programa para fazer a alocação dinâmica dos blocos de dados conforme solicitado abaixo:<br>
+(a) Vetor de 1024 Bytes (1 Kbyte).<br>
+(b) Matriz de inteiros de dimensão 10 x 10.<br>
+(c) Vetor para armazenar 50 registros contendo: nome do produto (30 caracteres), código do produto (inteiro) e preço em reais.<br>
+(d) Texto de até 100 linhas com até 80 caracteres em cada linha.<br>
+## [Exercício 19]()
+Faça um programa para associar nomes as linhas de uma matriz de caracteres. O usuário irá informar o número máximo de nomes que poderão ser armazenados. Cada nome poderá ter até 30 caracteres com o ’\0’ no final. O usuário poderá usar 5 opções diferentes para manipular a matriz:<br>
+(a) Gravar um nome em uma linha da matriz;<br>
+(b) Apagar o nome contido em uma linha da matriz;<br>
+(c) Informar um nome, procurar a linha onde ele se encontra e substituir por outro nome;<br>
+(d) Informar um nome, procurar a linha onde ele se encontra e apagar;<br>
+(e) Pedir para recuperar o nome contido em uma linha da matriz;<br>
+## [Exercício 20]()
+Faça um programa que:<br>
+(a) Peça para o usuário entrar com o nome e a posição (coordenadas X e Y) de N cidades e as armazene em um vetor de estruturas (N é informado pelo usuário);<br>
+(b) Crie uma matriz de distâncias entre cidades de tamanho N x N;<br>
+(c) Calcule as distâncias entre cada duas cidades e armazene na matriz;<br>(d) Exiba na tela a matriz de distâncias obtida;<br>
+(e) Quando o usuário digitar o número de duas cidades o programa deverá retornar a distância entre elas.
+## [Exercício 21]()
+Faça um programa que leia quatro números a, b, c e d, que serão as dimensões de duas matrizes, e: <br>
+Crie e leia uma matriz, dadas as dimensões dela;<br>Crie e construa uma matriz que seja o produto de duas matrizes.<br>
+Na sua função main(), imprima as duas matrizes e o produto entre elas, se existir.
