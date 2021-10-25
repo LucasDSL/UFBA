@@ -1,16 +1,16 @@
 # Arquivos 
 Nesta etapa, cada estudante irá exercitar a programação usando operações básicas com arquivos, incluindo leitura/escrita de caracteres em arquivos texto. Para tanto, deverão resolver a seguinte lista de exercícios, produzida para o curso de "Programação Procedural" pelo Prof. André Bakes da Faculdade de Computação da Universidade Federal de Uberlândia
-## [Exercício 1]()
+## [Exercício 1](https://github.com/LucasDSL/Faculdade/blob/a50cc1e8c0e85e6f05580d66b0f0336db70f2b73/02%20Laborat%C3%B3rio%20de%20Programa%C3%A7%C3%A3o%20I/12%20Arquivos/e1.c)
 Escreva um programa que:<br>
 (a) Crie/abra um arquivo texto de nome “arq.txt”;<br>
 (b) Permita que o usuário grave diversos caracteres nesse arquivo, até que o usuário entre com o caractere ‘0’;<br>
 (c) Feche o arquivo;<br>
 Agora, abra e leia o arquivo, caractere por caractere, e escreva na tela todos os caracteres armazenados.
-## [Exercício 2]()
+## [Exercício 2](https://github.com/LucasDSL/Faculdade/blob/a50cc1e8c0e85e6f05580d66b0f0336db70f2b73/02%20Laborat%C3%B3rio%20de%20Programa%C3%A7%C3%A3o%20I/12%20Arquivos/e2.c)
 Faça um programa que receba do usuário um arquivo texto e mostre na tela quantas linhas esse arquivo possui.
-## [Exercício 3]()
+## [Exercício 3](https://github.com/LucasDSL/Faculdade/blob/a50cc1e8c0e85e6f05580d66b0f0336db70f2b73/02%20Laborat%C3%B3rio%20de%20Programa%C3%A7%C3%A3o%20I/12%20Arquivos/e3.c)
 Faça um programa que receba do usuário um arquivo texto e mostre na tela quantas letras são vogais.
-## [Exercício 4]()
+## [Exercício 4](https://github.com/LucasDSL/Faculdade/blob/a50cc1e8c0e85e6f05580d66b0f0336db70f2b73/02%20Laborat%C3%B3rio%20de%20Programa%C3%A7%C3%A3o%20I/12%20Arquivos/e4.c)
 Faça um programa que receba do usuário um arquivo texto e mostre na tela quantas letras são vogais e quantas são consoantes.
 ## [Exercício 5]()
 Faça um programa que receba do usuário um arquivo texto e um caracter. Mostre na tela quantas vezes aquele caractere ocorre dentro do arquivo.
