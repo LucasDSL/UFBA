@@ -12,11 +12,11 @@ Faça um programa que receba do usuário um arquivo texto e mostre na tela quant
 Faça um programa que receba do usuário um arquivo texto e mostre na tela quantas letras são vogais.
 ## [Exercício 4](https://github.com/LucasDSL/Faculdade/blob/a50cc1e8c0e85e6f05580d66b0f0336db70f2b73/02%20Laborat%C3%B3rio%20de%20Programa%C3%A7%C3%A3o%20I/12%20Arquivos/e4.c)
 Faça um programa que receba do usuário um arquivo texto e mostre na tela quantas letras são vogais e quantas são consoantes.
-## [Exercício 5]()
+## [Exercício 5](https://github.com/LucasDSL/Faculdade/blob/0ada6d6ef123be5fd581e1b0390b2f9ed184119c/02%20Laborat%C3%B3rio%20de%20Programa%C3%A7%C3%A3o%20I/12%20Arquivos/e5.c)
 Faça um programa que receba do usuário um arquivo texto e um caracter. Mostre na tela quantas vezes aquele caractere ocorre dentro do arquivo.
-## [Exercício 6]()
+## [Exercício 6](https://github.com/LucasDSL/Faculdade/blob/0ada6d6ef123be5fd581e1b0390b2f9ed184119c/02%20Laborat%C3%B3rio%20de%20Programa%C3%A7%C3%A3o%20I/12%20Arquivos/e6.c)
 Faça um programa que receba do usuário um arquivo texto e mostre na tela quantas vezes cada letra do alfabeto aparece dentro do arquivo.
-## [Exercício 7]()
+## [Exercício 7](https://github.com/LucasDSL/Faculdade/blob/0ada6d6ef123be5fd581e1b0390b2f9ed184119c/02%20Laborat%C3%B3rio%20de%20Programa%C3%A7%C3%A3o%20I/12%20Arquivos/e7.c)
 Faça um programa que receba do usuário um arquivo texto. Crie outro arquivo texto contendo o texto do arquivo de entrada, mas com as vogais substituídas por ‘*’.
-## [Exercício 8]()
+## [Exercício 8](https://github.com/LucasDSL/Faculdade/blob/0ada6d6ef123be5fd581e1b0390b2f9ed184119c/02%20Laborat%C3%B3rio%20de%20Programa%C3%A7%C3%A3o%20I/12%20Arquivos/e8.c)
 Faça um programa que leia o conteúdo de um arquivo e crie um arquivo com o mesmo conteúdo, mas com todas as letras minúsculas convertidas para maiúsculas. Os nomes dos arquivos serão fornecidos, via teclado, pelo usuário. A função que converte minúscula para maiúscula é o toupper(). Ela é aplicada em cada caractere da string.
