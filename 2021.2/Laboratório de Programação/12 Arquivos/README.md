@@ -20,3 +20,7 @@ Faça um programa que receba do usuário um arquivo texto e mostre na tela quant
 Faça um programa que receba do usuário um arquivo texto. Crie outro arquivo texto contendo o texto do arquivo de entrada, mas com as vogais substituídas por ‘*’.
 ## [Exercício 8](https://github.com/LucasDSL/Faculdade/blob/0ada6d6ef123be5fd581e1b0390b2f9ed184119c/02%20Laborat%C3%B3rio%20de%20Programa%C3%A7%C3%A3o%20I/12%20Arquivos/e8.c)
 Faça um programa que leia o conteúdo de um arquivo e crie um arquivo com o mesmo conteúdo, mas com todas as letras minúsculas convertidas para maiúsculas. Os nomes dos arquivos serão fornecidos, via teclado, pelo usuário. A função que converte minúscula para maiúscula é o toupper(). Ela é aplicada em cada caractere da string.
+## [Exercício 9]()
+Faça um programa que receba dois arquivos do usuário, e crie um terceiro arquivo com o conteúdo dos dois primeiros juntos (o conteúdo do primeiro seguido do conteúdo do segundo).
+
+

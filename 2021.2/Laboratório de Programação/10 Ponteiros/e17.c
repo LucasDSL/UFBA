@@ -11,7 +11,7 @@ int main(){
     float parte_frac = 0.0;
     frac(f, &parte_inteira, &parte_frac);
     printf("A parte inteira do numero eh: %d\n", parte_inteira);
-    printf("A parte fracionaria do numero eh: %.2f\n", parte_frac);
+    printf("A parte a do numero eh: %.2f\n", parte_frac);
 }
 
 void frac(float f, int *parte_inteira, float *parte_frac){

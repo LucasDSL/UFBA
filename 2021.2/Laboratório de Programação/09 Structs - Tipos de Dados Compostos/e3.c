@@ -91,7 +91,7 @@ void cadastrar_produtos(int total_produtos, produto *lista_produtos){
         }
         float new_preco;
         printf("Digite o preco do produto: ");
-        scanf("%f", new_preco);
+        scanf("%f", &new_preco);
         (lista_produtos + i)->preco = new_preco;
     }   
 }
