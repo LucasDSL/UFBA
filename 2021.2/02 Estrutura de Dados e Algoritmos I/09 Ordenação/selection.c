@@ -1,11 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+// Não estável, pode haver troca de elementos com mesmo valor de chave 
 void selection_sort(int *, int);
 
-int main(){
-
-}
+int main(){}
 
 void selection_sort(int *vet, int size){
     int i, j, id_smaller, aux;
