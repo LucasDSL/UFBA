@@ -47,5 +47,6 @@ $ src/sim inputs/addiu.x
 >> 
 >> Simulating...
 
-Right now, the simulator will become unresponsive because it has not been
-implemented yet (that is your job!). Press Control+C to exit the simulator.
+4. Extra 
+You can try my code on [repl.it](https://replit.com/@LucasDSL/getit#source/sim.c).
+Since we already have the hex codes, you can jump step 2.
