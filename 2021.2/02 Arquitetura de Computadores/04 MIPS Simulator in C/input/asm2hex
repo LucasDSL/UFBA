@@ -1,0 +1,11 @@
+#!/usr/bin/python
+
+import os
+import sys
+
+if len(sys.argv) != 2:
+  print("Usage: %s <asm file>" % (sys.argv[0]))
+  print("It will produce a new file with same name but with extension .x")
+  exit(1)
+
+os.system("java -jar Mars4_5.jar " + sys.argv[1] +" dump .text HexText " + sys.argv[1][:-2]+".x")
