@@ -50,3 +50,6 @@ $ src/sim inputs/addiu.x
 4. Extra 
 You can try my code on [repl.it](https://replit.com/@LucasDSL/getit#source/sim.c).
 Since we already have the hex codes, you can jump step 2.
+The simulator is ./source/sim.c
+
+Made By: Me and [Adrielle Carvalho](https://www.linkedin.com/in/adrielle-carvalho-0571761a4/)
