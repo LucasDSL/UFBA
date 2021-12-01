@@ -2,22 +2,22 @@
 #include<stdlib.h>
 
 void selection_sort(int *, int);
-void selectSortIt(int *, int, int);
+void selectSortIt(float *, int, int);
 
 int main(){
     int entries, iterations, i;
     scanf("%d", &entries);
-    int *vet = (int *) malloc(sizeof(int) * entries);
+    float *vet = (float *) malloc(sizeof(float) * (entries-1));
     for(i = 0; i < entries; i++){
         if( i == 0){
-            scanf("%d", &iterations);
+            scanf("%d\n", &iterations);
             continue;
         }
-        scanf("%d", vet+i-1);
+        scanf("%f", (vet+i-1));
     }
-    selectSortIt(vet, entries, iterations);
+    selectSortIt(vet, entries-1, iterations);
     for(i = 0; i < entries-1; i++){
-        printf("%d ", *(vet + i));
+        printf("%g ", *(vet + i));
     }
     printf("\n");
 }
@@ -44,8 +44,9 @@ void selection_sort(int *vet, int size){
     }
 }
 
-void selectSortIt(int *vet, int size, int iterations){
-    int i, j, id_smaller, aux, n_iterations = 0;
+void selectSortIt(float *vet, int size, int iterations){
+    int i, j, id_smaller, n_iterations = 0;
+    float aux;
     for(i = 0; i < size; i++){
         if(n_iterations == iterations){
             break;
@@ -55,6 +56,9 @@ void selectSortIt(int *vet, int size, int iterations){
             if(*(vet + j) < *(vet + id_smaller)){
                 id_smaller = j;
             }
+        }
+        if(id_smaller == i){
+            continue;
         }
         aux = *(vet + i);
         *(vet + i) = *(vet + id_smaller);

@@ -24,7 +24,6 @@ int *insertion_sort(int *vet, int size){
     int i, j, aux;
     for(i = 0; i < size; i++){
         new_vector[i] = vet[i];
-        if(i == 0) continue;
         for(j = i; j > 0; j--){
             if(new_vector[j] < new_vector[j-1]){
                 aux = new_vector[j];
