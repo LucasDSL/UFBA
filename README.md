@@ -7,3 +7,5 @@ Material produzido por mim ou em conjunto com outras pessoas(haverá indicativo)
 - Arquitetura de Computadores
 - Estrutura de Dados e Algoritmos I
 - Laboratório de Programação I
+### Semestre 2022.1 
+- Análise e Projeto de Algoritmos
