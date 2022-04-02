@@ -6,4 +6,4 @@ A disciplina possui dois métodos de avaliação:
    - [Elis Marcela](https://github.com/develis)
    - [Eu](https://github.com/lucasdsl)
    - [Monique Silva](https://github.com/moniquedsilva)
-2. Questões individuais no [Beecrowd](https://www.beecrowd.com.br/judge/en)
+2. Questões individuais no [Beecrowd](https://www.beecrowd.com.br/judge/en) - Indicadas por número na plataforma 
