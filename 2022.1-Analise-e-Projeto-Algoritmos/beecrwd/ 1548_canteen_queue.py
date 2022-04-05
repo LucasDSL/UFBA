@@ -7,9 +7,9 @@ def merge_sort(array_input):
 
         right_array = array_input[mid:]
   
-        mergeSort(left_array)
+        merge_sort(left_array)
   
-        mergeSort(right_array)
+        merge_sort(right_array)
   
         i = j = k = 0
   
@@ -38,7 +38,7 @@ def get_tests_run_sort_count():
     for t in range(len_array_input):
         array_input[t] = int(array_input[t])
     copy_array_input = array_input[:]
-    mergeSort(array_input)
+    merge_sort(array_input)
     oposit_index = len_array_input-1
     numbers_not_moved = 0
     for i in range(len_array_input):
