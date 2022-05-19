@@ -17,4 +17,6 @@ A disciplina possui dois métodos de avaliação:
 |   4  | Sorts - Counting, radix, bucket | [Lista](./Collab/MATA52-Semana04-Paladio.ipynb%20-%20Colaboratory.pdf) | [1548](./beecrwd/1548_canteen_queue.py) |
 |   5  | Enumeração e retrocesso | [Lista](./Collab/MATA52-Semana05-Paládio.ipynb%20-%20Colaboratory.pdf) |
 |   6  | Algoritmos gulosos | [Lista](./Collab/MATA52-Semana06-Paládio.ipynb%20-%20Colaboratory.pdf) |
-|   7  | Análise Probabilística | [Lista](./Collab/MATA52-Semana07-Paladio.ipynb%20-%20Colaboratory.pdf) | [1093](./beecrwd/1093_vampires.py)
+|   7  | Análise Probabilística | [Lista](./Collab/MATA52-Semana07-Paladio.ipynb%20-%20Colaboratory.pdf) | [1093](./beecrwd/1093_vampires.py) 
+|   8  | Programação Dinâmica I | [Lista](./Collab/MATA52-Semana08-Paladio.ipynb%20-%20Colaboratory.pdf) |  | 
+|   9  | Programação Dinâmica II | [Lista](./Collab/MATA52-Semana09-Paládio.ipynb%20-%20Colaboratory.pdf) | [1029](./beecrwd/1029_fibonacci_calls.py)
