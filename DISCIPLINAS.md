@@ -1,5 +1,3 @@
-<img src="Computer_science.svg" width="300" align="right">
-
 # Matérias Cursadas
 
 ### Lucas dos Santos Lima 

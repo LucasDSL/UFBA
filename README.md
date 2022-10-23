@@ -8,7 +8,7 @@ Início - 2021  (ou em andamento).
 
 Universidade Federal da Bahia.
 
-[Disciplinas Cursadas](https://github.com/seu-user/seu-repositorio/DISCIPLINAS.md)
+[Disciplinas Cursadas](./DISCIPLINAS.md)
 
 ---
 
