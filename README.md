@@ -1,5 +1,3 @@
-<img src="/images/Computer_science.svg" width="300" align="right">
-
 # Meus projetos da Faculdade
 
 ### Lucas Lima 
