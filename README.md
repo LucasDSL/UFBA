@@ -1,10 +1,12 @@
+<img src="./images/Computer_science.svg" width="300" align="right">
+
 # Meus projetos da Faculdade
 
 ### Lucas Lima 
 
 **Ciência da Computação**
 
-Início - 2021  (ou em andamento).
+Início - 2021  (em andamento).
 
 Universidade Federal da Bahia.
 
@@ -12,9 +14,3 @@ Universidade Federal da Bahia.
 
 ---
 
-### Nome de matéria
-[ Ano.semestre ]
-
-Descrição da matéria. Aqui pode entrar os conteúdos abordados na matéria, a linguagem de programação principal, os metódos usados para estudo, entre outros.
-
-[Meus códigos](https://github.com/link-para-o-diretorio-da-materia)
