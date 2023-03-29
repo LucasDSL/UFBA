@@ -1,4 +1,4 @@
-<img src="./images/Computer_science.svg" width="300" align="right">
+<img src="./docs/Computer_science.svg" width="300" align="right">
 
 # Meus projetos da Faculdade
 
@@ -10,7 +10,7 @@ Início - 2021  (em andamento).
 
 Universidade Federal da Bahia.
 
-[Disciplinas Cursadas](./DISCIPLINAS.md)
+[Situações nas Disciplinas](./DISCIPLINAS.md)
 
 ---
-
+[Template](https://github.com/mende1/college-projects)

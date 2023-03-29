@@ -1,0 +1,5 @@
+carro 3888.55
+feijao 50.50
+cuscuz 12.43
+acarajé 7.00
+pão de milho 24.99
