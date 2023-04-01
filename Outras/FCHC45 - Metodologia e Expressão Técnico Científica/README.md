@@ -1,4 +1,4 @@
-## Metodologia e Expressão técnico científica 
+## Metodologia e Expressão Técnico-científica 
 [2023.1]
 
 Ref: 
