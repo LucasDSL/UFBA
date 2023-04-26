@@ -1,0 +1,4 @@
+MOV A, 6; 
+MOV B, 2; 
+SUB A, B; 
+MOV B, A;

@@ -15,4 +15,4 @@ executado pelo computador, enquanto outros vão
 além e sabem que aquilo que é escrito passará 
 por outros níveis/máquinas virtuais até entrar 
 em contato real com o hardware através de instruções 
-primitivas de circuitos, e como isso será o assunto principal do livro.  
+primitivas de circuitos, e como isso será o assunto principal do livro.
