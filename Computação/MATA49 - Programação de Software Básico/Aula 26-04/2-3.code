@@ -1,0 +1,6 @@
+MOV A, 6; 
+DIV 3;
+MOV B, A; 
+MOV A, 8;
+DIV 2; 
+ADD A, B; 

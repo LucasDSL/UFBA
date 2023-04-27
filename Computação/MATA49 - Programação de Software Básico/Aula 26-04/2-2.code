@@ -1,0 +1,5 @@
+MOV A, 6; 
+MOV B, 2;  
+ADD B, 3; 
+MUL B;
+ADD A, 2;
