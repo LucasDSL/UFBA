@@ -1,4 +1,0 @@
-Ana maior de idade
-Joao menor de idade
-Carla maior de idade
-Pedro menor de idade

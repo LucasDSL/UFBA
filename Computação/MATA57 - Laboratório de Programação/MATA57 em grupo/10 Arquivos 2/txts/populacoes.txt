@@ -1,8 +1,0 @@
-petrolina                               000000000200000
-juazeiro                                000000000100000
-salvador                                000000004000000
-recife                                  000000023000000
-dubai                                   000000000045000
-new york                                000000000920000
-isacolandia                             000000010000000
-remanso                                 000000008000001
