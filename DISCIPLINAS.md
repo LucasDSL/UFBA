@@ -2,14 +2,10 @@
 
 ### Lucas dos Santos Lima 
 
-Bacharelado em **Ciência da Computação** . 
+Bacharelado em **Engenharia de Computação** . 
 
+[Grade Curricular](./docs/engenharia_de_computacao.pdf)
 
----
-### Grade Curricular
-
-
-<img src="./docs/fluxograma.jpg" width="100%">
 
 ---
 
@@ -19,15 +15,17 @@ Bacharelado em **Ciência da Computação** .
 |:heavy_plus_sign: | Em Curso|
 |:heavy_minus_sign: |Não Iniciado|
 
-### Situação
-
 |Semestre| | | | | | |
 |-|-|-|-|-|-|-|
-|1|[Projeto de Circuitos Lógicos](./Computa%C3%A7%C3%A3o/MATA38%20-%20Projeto%20de%20Circuitos%20L%C3%B3gicos/)<br> :heavy_check_mark:|[Introdução à Lógica de Programação](./Computa%C3%A7%C3%A3o/MATA37%20-%20Introdu%C3%A7%C3%A3o%20a%20L%C3%B3gica%20de%20Programa%C3%A7%C3%A3o/)<br> :heavy_check_mark:|Seminário de Introdução ao Curso<br> :heavy_check_mark:|Matemática Discreta I<br> :heavy_check_mark:| Cálculo A<br> :heavy_check_mark:|Geometria Analítica<br> :heavy_check_mark:
-|2|[Arquitetura de Computadores](./Computa%C3%A7%C3%A3o//MATA48%20-%20Arquitetura%20de%20Computadores/)<br> :heavy_check_mark:|Estrutura de Dados e Algoritmos I<br> :heavy_check_mark:|[Laboratório de Programação I](./Computa%C3%A7%C3%A3o/MATA57%20-%20Laborat%C3%B3rio%20de%20Programa%C3%A7%C3%A3o/)<br> :heavy_check_mark:|Matemática Discreta II<br> :heavy_minus_sign:|Complementos de Cálculo<br> :heavy_check_mark:|Algebra Linear A<br> :heavy_minus_sign:|
-|3|[Programação Orientada a Objetos](./Computa%C3%A7%C3%A3o/MATA55%20-%20Programacao%20Orientada%20a%20Objetos/)<br> :heavy_minus_sign:|Programação de Software Básico<br> :heavy_plus_sign:|Linguagens Formais e Autômatos<br> :heavy_minus_sign:|Lógica para Computação<br>:heavy_minus_sign:|[Métodos Estatísticos](./Outras//MAT236%20-%20M%C3%A9todos%20Estat%C3%ADsticos/)<br> :heavy_plus_sign:|Elementos de Eletromagnetismo<br> :heavy_minus_sign:
-|4|[Metodologia E Expressão Técnico-científica](./Outras/FCHC45%20-%20Metodologia%20e%20Express%C3%A3o%20T%C3%A9cnico-cient%C3%ADfica/)<br>:heavy_plus_sign:|Teoria Da Computação<br>:heavy_minus_sign:|[Análise E Projeto De Algoritmos](./Computa%C3%A7%C3%A3o/MATA52%20-%20An%C3%A1lise%20e%20Projeto%20Algoritmos/)<br>:heavy_minus_sign:|Sistemas Operacionais<br>:heavy_minus_sign:|Compiladores<br>:heavy_minus_sign:|Computador, ética e sociedade<br>:heavy_minus_sign:|
-|5|Teoria dos Grafos<br> :heavy_minus_sign:|Estrutura de Dados e Algoritmos II<br> :heavy_minus_sign:|Redes de Computadores I<br> :heavy_minus_sign:|Engenharia de Software I<br>:heavy_minus_sign:|Paradigmas de Linguagem de Programação<br> :heavy_minus_sign:|Optativa 1<br> :heavy_minus_sign:|
-|6|Banco de Dados<br> :heavy_minus_sign:|Inteligência Artificial<br> :heavy_minus_sign:|Computação Gráfica<br> :heavy_minus_sign:|Fundamentos de Sistemas Distribuídos <br>:heavy_minus_sign:|Engenharia de Software II<br> :heavy_minus_sign:|Optativa 2 <br>:heavy_minus_sign:|
-|7|Projeto Final de Curso I<br> :heavy_minus_sign:| Optativa 3:<br> :heavy_minus_sign:| Optativa 4<br> :heavy_minus_sign:| Optativa 5 <br>:heavy_minus_sign:| Optativa 6<br> :heavy_minus_sign:| Optativa 7 :heavy_minus_sign:|
-|8|Projeto Final de Curso II<br> :heavy_minus_sign:|Optativa 8<br> :heavy_minus_sign:| Optativa 9<br> :heavy_minus_sign:| Optativa 10<br> :heavy_minus_sign:| Optativa 11<br> :heavy_minus_sign:| Optativa 12<br> :heavy_minus_sign:|
+|1|FISICA GERAL E EXPERIMENTAL I-E<br>:heavy_minus_sign:|GEOMETRIA ANALÍTICA<br>:heavy_minus_sign:|CÁLCULO A<br>:heavy_minus_sign:|QUIMICA GERAL<br>:heavy_minus_sign:|
+|2|SISTEMAS LÓGICOS<br>:heavy_minus_sign:|INTRODUÇÃO À ENGENHARIA DE COMPUTAÇÃO<br>:heavy_minus_sign:|FISICA GERAL E EXPERIMENTAL II-E<br>:heavy_minus_sign:|CÁLCULO B<br>:heavy_minus_sign:|ÁLGEBRA LINEAR A<br>:heavy_minus_sign:|
+|3|TECNOLOGIA DOS MATERIAIS PARA A ENGENHARIA ELÉTRICA<br>:heavy_minus_sign:|ELETRÔNICA DIGITAL<br>:heavy_minus_sign:|FÍSICA GERAL E EXPERIMENTAL III-E<br>:heavy_minus_sign:|CÁLCULO C<br>:heavy_minus_sign:|MATEMÁTICA DISCRETA II<br>:heavy_minus_sign:|
+|4|CIÊNCIAS DO AMBIENTE<br>:heavy_minus_sign:|MECÂNICA DOS SÓLIDOS<br>:heavy_minus_sign:|ANÁLISE DE CIRCUITOS I<br>:heavy_minus_sign:|MÉTODOS ESTATÍSTICOS<br>:heavy_minus_sign:|INTRODUÇÃO À LÓGICA DE PROGRAMAÇÃO<br>:heavy_minus_sign:| 
+|5|SINAIS E SISTEMAS I<br>:heavy_minus_sign:|ANALISE DE CIRCUITOS II<br>:heavy_minus_sign:|DISPOSITIVOS ELETRÔNICOS<br>:heavy_minus_sign:|LABORATÓRIO INTEGRADO I-A<br>:heavy_minus_sign:|METODOLOGIA E EXPRESSÃO DO CONHECIMENTO CIENTÍFICO<br>:heavy_minus_sign:|LÓGICA PARA COMPUTAÇÃO<br>:heavy_minus_sign:|
+|6|FENÔMENOS DE TRANSPORTES I<br>:heavy_minus_sign:|SINAIS E SISTEMAS II<br>:heavy_minus_sign:|SISTEMAS MICROPROCESSADOS<br>:heavy_minus_sign:|CÁLCULO NUMÉRICO I<br>:heavy_minus_sign:|ESTRUTURAS DE DADOS E ALGORITMOS I<br>:heavy_minus_sign:|
+|7|PROCESSAMENTO DIGITAL DE SINAIS<br>:heavy_minus_sign:|LABORATÓRIO INTEGRADO II-A<br>:heavy_minus_sign:|PROGRAMAÇÃO DE SOFTWARE BÁSICO<br>:heavy_minus_sign:|ANÁLISE E PROJETO DE ALGORITMOS<br>:heavy_minus_sign:|PROGRAMAÇÃO ORIENTADA A OBJETOS<br>:heavy_minus_sign:|
+|8|LABORATÓRIO INTEGRADO III-A<br>:heavy_minus_sign:|PROJETO DE CIRCUITOS INTEGRADOS DIGITAIS<br>:heavy_minus_sign:|TEORIA DA COMPUTAÇÃO<br>:heavy_minus_sign:|SISTEMAS OPERACIONAIS<br>:heavy_minus_sign:|REDES DE COMPUTADORES I<br>:heavy_minus_sign:|
+|9|PROGRAMAÇÃO EM TEMPO REAL PARA SISTEMAS EMBARCADOS<br>:heavy_minus_sign:|LABORATÓRIO INTEGRADO IV-A<br>:heavy_minus_sign:|COMPILADORES<br>:heavy_minus_sign:|ENGENHARIA DE SOFTWARE I<br>:heavy_minus_sign:|SISTEMAS DE TEMPO REAL<br>:heavy_minus_sign:|
+|10|ECONOMIA E FINANÇAS<br>:heavy_minus_sign:|REDES INDUSTRIAIS<br>:heavy_minus_sign:|INTERFACE HOMEM-MÁQUINA<br>:heavy_minus_sign:|OPTATIVA<br>:heavy_minus_sign:|OPTATIVA<br>:heavy_minus_sign:|
+|11|ESTÁGIO EM ENGENHARIA DE COMPUTAÇÃO<br>:heavy_minus_sign:|TRABALHO DE CONCLUSÃO DO CURSO DE ENG DE COMPUTAÇÃO I<br>:heavy_minus_sign:|OPTATIVA<br>:heavy_minus_sign:|OPTATIVA<br>:heavy_minus_sign:|
+|12|ADMINISTRACAO<br>:heavy_minus_sign:|LEGISLAÇÃO SOCIAL<br>:heavy_minus_sign:|TRABALHO DE CONCLUSÃO DO CURSO DE ENG DE COMPUTAÇÃO II<br>:heavy_minus_sign:|OPTATIVA<br>:heavy_minus_sign:|OPTATIVA<br>:heavy_minus_sign:|

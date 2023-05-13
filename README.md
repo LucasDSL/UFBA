@@ -1,16 +1,16 @@
-<img src="./docs/Computer_science.svg" width="300" align="right">
+<img src="./docs/computer_engineer.svg" width="300" align="right">
 
-# Meus projetos da Faculdade
+# Projetos da Faculdade
 
 ### Lucas Lima 
 
-**Ciência da Computação**
+**Engenharia de Computação**
 
-Início - 2021  (em andamento).
+Início - 2023/08  (em andamento).
 
 Universidade Federal da Bahia.
 
-[Situações nas Disciplinas](./DISCIPLINAS.md)
+[Disciplinas](./DISCIPLINAS.md)
 
 ---
 [Template](https://github.com/mende1/college-projects)
