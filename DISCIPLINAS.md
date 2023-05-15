@@ -2,7 +2,7 @@
 
 ### Lucas dos Santos Lima 
 
-Bacharelado em **Engenharia de Computação** . 
+Bacharelando em **Engenharia de Computação** . 
 
 [Grade Curricular](./docs/engenharia_de_computacao.pdf)
 
