@@ -1,5 +1,5 @@
 ## Programação de Software Básico
-[2023.1] Profª Mirlei Moura 
+[2023.1 - 60H] Profª Mirlei Moura 
 
 ### Métodos de Avaliação: 
 #### Atividade 1 - Leitura, discussão e fichamento de artigos
@@ -26,11 +26,12 @@ Em seguida, o fichamento deve apresentar uma seção textual com uma análise
 comparativa considerando as seguintes questões:
 
 1. O que ambos artigos apresentam em comum?
-2. O apresentam de diferente?
+2. Quais as diferenças apresentadas ? 
 3. Qual(is) justificativa(s) para as diferenças?
 
 #### Ref: 
 Organização Estruturada de Computadores - Tanenbaum, 6a Ed.
+
 [How to install nasm - Ubuntu 22.04](https://installati.one/install-nasm-ubuntu-22-04/)
 
 [Learn Assembly Language](https://asmtutor.com/#)
