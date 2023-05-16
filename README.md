@@ -4,7 +4,7 @@
 
 ### Lucas Lima 
 
-**Engenharia de Computação**
+Bacharelando em **Engenharia de Computação**
 
 Início - 2023/08  (em andamento).
 

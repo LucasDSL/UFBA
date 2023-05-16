@@ -1,8 +1,4 @@
-# Matérias Cursadas
-
-### Lucas dos Santos Lima 
-
-Bacharelando em **Engenharia de Computação** . 
+# Matérias
 
 [Grade Curricular](./docs/engenharia_de_computacao.pdf)
 
