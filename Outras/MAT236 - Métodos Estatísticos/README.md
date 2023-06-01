@@ -1,5 +1,5 @@
 ## Métodos Estatísticos
-[2023.1 - 60H] Profª Renata Esquível 
+[2023.1 - 60H] [Profª Renata Esquível](http://lattes.cnpq.br/8928791014905490) 
 
 ### Métodos de Avaliação: 
 #### UNIDADE I – Probabilidade e Distribuições
