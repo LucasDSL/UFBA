@@ -1,5 +1,5 @@
 ## Tomorrow - Computação Avançada 
-[2023.1 - 30H] Prof Rubisley Lemes
+[2023.1 - 30H] [Prof Rubisley Lemes](http://lattes.cnpq.br/4230260717556147)
 
 Ementa: O curso abordará o estudo da linguagem C++, e será totalmente prático, com a implementação de programas diversos, utilizando estruturas de dados, e bibliotecas disponíveis nesta linguagem.
 
