@@ -1,4 +1,5 @@
 #lang racket
+(require rackunit)
 
 (define (member? atom list) (
   cond
@@ -7,4 +8,6 @@
   [else (member? atom (rest list))]
 ))
 
-(member? 1 '(1 b (d . c)))
+(check-equal? (member? 1 '(1 b (d . c))) #t)
+(check-equal? (member? 1 '()) #f)
+(check-equal? (member? 1 '(2 b (d . c))) #f)

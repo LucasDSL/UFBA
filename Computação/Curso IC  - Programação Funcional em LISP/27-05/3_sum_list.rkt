@@ -1,4 +1,5 @@
 #lang racket
+(require rackunit)
 ; não é recursão de cauda, é dobra da direita pra esquerda
 (define (sum list) (
   cond 
@@ -14,6 +15,6 @@
   (sum_tail (rest list) (+ (first list) acumulator))
   )
 )
-(sum '(1 2 3 4 5))  ; 15
-(sum_tail '(1 2 3 4 5) 0) ; 15
-(= (sum '(1 2 3 4 5)) (sum_tail '(1 2 3 4 5) 0)) ; #t
+(check-equal? (sum '(1 2 3 4 5)) 15) 
+(check-equal? (sum_tail '(1 2 3 4 5) 0) 15)
+(check-equal? (sum '(1 2 3 4 5)) (sum_tail '(1 2 3 4 5) 0))

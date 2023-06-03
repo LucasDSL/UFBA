@@ -1,4 +1,5 @@
 #lang racket
+(require rackunit)
 (define (atom? x) (
   and (not (null? x))
   (not (pair? x))
@@ -16,4 +17,6 @@
   )
 )
 
-(lat? '(a b c))
+(check-equal? (lat? '(a b c)) #t)
+(check-equal? (lat? '(a '() c)) #f)
+(check-equal? (lat? '()) #f)
