@@ -1,5 +1,5 @@
 ## Programação de Software Básico
-[2023.1 - 60H] Profª Mirlei Moura 
+[2023.1 - 60H] [Profª Mirlei Moura ](http://lattes.cnpq.br/1142052092222961)
 
 ### Métodos de Avaliação: 
 #### Atividade 1 - Leitura, discussão e fichamento de artigos
