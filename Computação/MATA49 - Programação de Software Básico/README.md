@@ -29,6 +29,7 @@ comparativa considerando as seguintes questões:
 2. Quais as diferenças apresentadas ? 
 3. Qual(is) justificativa(s) para as diferenças?
 
+#### Atividade 2 
 #### Ref: 
 Organização Estruturada de Computadores - Tanenbaum, 6a Ed.
 
