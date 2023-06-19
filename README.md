@@ -6,7 +6,7 @@
 
 Bacharelando em **Engenharia de Computação**
 
-Início - 2023/08  (em andamento).
+Início - 2023  (em andamento).
 
 Universidade Federal da Bahia.
 
