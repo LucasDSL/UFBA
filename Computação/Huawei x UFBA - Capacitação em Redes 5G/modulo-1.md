@@ -23,5 +23,35 @@ some examples of tech that aren't fully usable only with 4G, but are real possib
 - remote surgery 
 - autonomous driving 
 ## 1.3 5G Standarlization Progress  
-## 1.4
-## 1.5
+3GPP was supposed to standarlize the process of 5g development on two phases on separate parts of its releases 
+but verizon announced the establishment of OTSA to formulate unified
+specifications for 5G tests, promote the allocation of 28 GHz spectrum resources, and
+promote the development of the 5G industry. Then 3GPP accelerated its process and made it as follow: 
+Phase 1 completed in the middle of 2018 implements
+eMBB and basic URLLC services. Phase 2, that is, 3GPP Release 16, completes URLLC services
+and enhances eMBB. mMTC was considered in the initial phase.
+## 1.4 5G Industry Chain and Ecosystem
+Both ecosystem and network deployment must be simplifiend in 5G technologies. There
+### 1.4.1
+There are several types of 5G terminals, the most common being the CPEs and 
+MiFi
+CPE: provides stable Wi-Fi coverage
+MiFi: can convert ubiquitous 5G network signals into high-speed personal hotspot signals
+This chapter also explains how are communications frequencies divided in china. 
+## 1.5 Global 5G Commercial Use
+In the beggining
+- device monitoring 
+- campus inspection 
+- live and mobile video 
+In the second phase: 
+- facial recognition
+- remote driving 
+- power distribution automation 
+- remote B-scan inspection 
+the third phase involves: 
+- advanced control and massive connections 
+- personal smart wearables 
+- smart homes 
+- self driving cars 
+- smart lamp poles 
+- motion control 
