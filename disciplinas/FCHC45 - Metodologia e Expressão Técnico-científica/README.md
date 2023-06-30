@@ -1,5 +1,9 @@
 ## Metodologia e Expressão Técnico-científica 
-[2023.1]
+[2023.1] Profª Carolina Marback
+
+### Métodos de Avaliação 
+1. Apresentação e Relatório referentes a capítulo de um livro designado pela professora 
+2.  
 
 Ref: 
 

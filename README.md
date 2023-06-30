@@ -1,4 +1,4 @@
-<img src="./docs/computer_engineer.svg" width="300" align="right">
+<img src="./docs/neuromancer.png" width="300" align="right">
 
 # Projetos da Faculdade
 

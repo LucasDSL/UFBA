@@ -13,23 +13,23 @@ and the second processing network services.
 #### NSA Networks: non-standalone 
 > 4G and 5G base stations coexist 
 
-There are three options: 
-
 |Option| Core Network (Control plane)|Control anchor|Base stations|Data split anchor|
-|---|---|---|----|
+|---|---|---|----|---|
 |3x|4G|4G|4G|5G||
 |4x|5G|5G|4G|5G||
 |7x|5G|4G|4G|5G||
+
 
 #### SA Networks: standalone
 There are only 5G base stations and 5G core networks
 
 |Option| Core Network (Control plane)|Control anchor|Base stations|Data split anchor|
-|---|---|---|----|
-|1|Pure 4G network|
-|2|Pure 5G network|
+|---|---|---|---|---|
+|1|Pure 4G network| <- | <- | <- |
+|2|Pure 5G network| <- | <- | <- |
 |5|5G|x|4G|x|
 |6|4G|x|5G|x|
+
 
 ### 2.1.2 5G Core Network Architecture
 Formed by the Radio Access Network(RAN) and the core network itself.

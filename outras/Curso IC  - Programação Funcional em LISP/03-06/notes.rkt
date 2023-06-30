@@ -222,7 +222,12 @@
 ; integer? any/c ... -> list?
 (define (intercala-m n . elementos) (
                                      if (< n 1) null
-                                        (cons (first elementos) (apply intercala-m (cons (- n 1) (insere-fim (first elementos) (rest elementos))))))
+                                        (cons 
+                                        (first elementos) 
+                                        (apply intercala-m (
+                                          cons 
+                                          (- n 1) 
+                                          (insere-fim (first elementos) (rest elementos))))))
   )
 (check-equal? (intercala-m 5 'a' b 'c) '(a b c a b))
 
