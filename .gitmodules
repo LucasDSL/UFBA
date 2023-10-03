@@ -1,6 +1,6 @@
-[submodule "outras/HACKATHON SEMCOMP 2022/hackathon-repo"]
-	path = outras/HACKATHON SEMCOMP 2022/hackathon-repo
+[submodule "HACKATHON SEMCOMP 2022/hackathon"]
+	path = HACKATHON SEMCOMP 2022/hackathon
 	url = git@github.com:LucasDSL/hackaton-semcomp-backend.git
-[submodule "disciplinas/MATA57 - Laboratório de Programação/MATA57 grupo"]
-	path = disciplinas/MATA57 - Laboratório de Programação/MATA57 grupo
-	url = git@github.com:LucasDSL/MATA57-LAB1.git
+[submodule "disciplinas/MATA57 - Laboratório de Programação/MATA57-grupo"]
+	path = disciplinas/MATA57 - Laboratório de Programação/MATA57-grupo
+	url = https://github.com/LucasDSL/MATA57-LAB1
