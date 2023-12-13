@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ContaCorrente
+comment1.params=nomeTit\ num\ ag\ saldoInicial\ taxa\ limite
+comment1.target=ContaCorrente(java.lang.String,\ int,\ int,\ float,\ float,\ float)
+comment2.params=
+comment2.target=void\ manutencaoMensal()
+comment3.params=valor
+comment3.target=boolean\ saque(float)
+numComments=4
